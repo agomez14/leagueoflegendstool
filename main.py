@@ -14,7 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import webapp2
+import webapp2, jinja2, os, logging, urllib2, urllib, json
+
+jinja_environment = jinja2.Environment(loader=
+    jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
