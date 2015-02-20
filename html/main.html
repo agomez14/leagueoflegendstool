@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>LeagueTool</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- Sets the viewport ie Mobile for Mobile viewing -->
+        <meta name="viewport" content="width=device-width, initial-
+         scale=1">
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <form class="form-inline" action="/sumid" method="GET">
+              <div class="form-group">
+                <label for="exampleInputName2">Summoner Name</label>
+                <input type="text" class="form-control" id="exampleInputName2" name="summoner">
+              </div>
+              <div class="form-group">
+                <select class="form-control" name="region">
+                 <option>NA</option>
+                 <option>EUW</option>
+                 <option>EUNE</option>
+                 <option>BR</option>
+                 <option>TR</option>
+                 <option>RU</option>
+                 <option>LAN</option>
+                 <option>LAS</option>
+                 <option>OCE</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-default">Search</button>
+            </form>        
+        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+</html>
